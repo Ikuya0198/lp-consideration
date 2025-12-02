@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Avisail Technologies - AI × Trading × Investment × Security</title>
-<meta name="description" content="Avisail Technologies is a next-generation technology company redefining trading, investment, and security through the power of AI and technological exploration">
+<title>Avisail Technologies - AI×貿易×投資×セキュリティ</title>
+<meta name="description" content="Avisail Technologiesは、AIと技術探究の力で貿易・投資・セキュリティを再定義する次世代テクノロジー企業です">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
@@ -752,21 +752,21 @@ footer{
     </div>
     <nav>
       <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="#top">ホーム</a></li>
+        <li><a href="#about">会社概要</a></li>
         <li class="menu-item">
-          <a href="#business">Business</a>
+          <a href="#business">事業概要</a>
           <div class="dropdown">
-            <a href="#business-trading">Trading</a>
-            <a href="#business-investment">Investment</a>
-            <a href="#business-security">Security</a>
+            <a href="#business-trading">貿易</a>
+            <a href="#business-investment">投資</a>
+            <a href="#business-security">セキュリティ</a>
           </div>
         </li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li class="lang-selector">
           <span class="globe-icon">🌐</span>
-          <span style="font-size:0.85rem;">EN</span>
+          <span style="font-size:0.85rem;">JP</span>
           <div class="lang-dropdown">
             <a href="index.jp">日本語</a>
             <a href="index.html">English</a>
@@ -791,22 +791,22 @@ footer{
     <span class="slogan">DRIVEN BY DISCOVERY.</span>
 
     <p class="hero-quote">
-      Ships symbolize progress. We carry cutting-edge technology and sail toward uncharted horizons
+      船は進歩の象徴。私たちは最先端技術を積み、まだ見ぬ地平へと航海します
     </p>
 
     <h1>
       Navigating the Future.
-      <span class="gradient-text">Trading × Investment × Security × AI</span>
+      <span class="gradient-text">貿易 × 投資 × セキュリティ × AI</span>
     </h1>
 
     <p class="lead">
-      Avisail Technologies is a next-generation technology company redefining trading, investment, and security through the power of AI and technological exploration.<br>
-      AI-driven automation, analysis, and decision support empower every business domain, from international vessel trading to asset management and cybersecurity
+      Avisail Technologiesは、AIと技術探究の力で貿易・投資・セキュリティを再定義する次世代テクノロジー企業です。<br>
+      AIによる自動化・分析・意思決定支援が、国際船舶取引から資産運用、サイバーセキュリティまで、あらゆるビジネス領域を支えます
     </p>
 
     <div style="margin-top:36px; display:flex; gap:14px; flex-wrap:wrap;">
-      <a href="#business" class="cta">Explore Our Business</a>
-      <a href="#contact" class="btn">Contact Us</a>
+      <a href="#business" class="cta">事業領域を見る</a>
+      <a href="#contact" class="btn">お問い合わせ</a>
     </div>
   </div>
 </section>
@@ -816,27 +816,27 @@ footer{
 ======================================== -->
 <section id="about">
   <div class="wrap">
-    <h2>About Us</h2>
+    <h2>会社概要（About Us）</h2>
     <div class="grid-2">
 
       <!-- PASSION -->
       <div class="card">
-        <h3 style="margin-bottom:16px;">Passion</h3>
+        <h3 style="margin-bottom:16px;">情熱（Passion）</h3>
         <p style="color:var(--text-secondary); font-size:1rem; line-height:1.8; margin-bottom:0;">
-          We believe the concept of distance no longer exists in the world.<br>
-          Cultures and markets are neighbors, and new technologies constantly appear before us.<br><br>
-          When a giant ship (new technology) appears, we fearlessly move forward and guide technology toward practical, valuable applications.<br><br>
-          Courage is the spark of innovation.<br>
-          We are passionate about delivering that value to people
+          世界に距離の概念は、もはや存在しないと考えます<br>
+          文化も市場も隣り合い、新たな技術は常に目の前に現れます<br><br>
+          目前に巨大な船（新たな技術）が現れたとき、私たちは恐れず前に進み、テクノロジーを実際に価値ある使い方へと導きます<br><br>
+          勇気はイノベーションの火種です<br>
+          その価値を人々に届けることに、私たちは情熱を注ぎます
         </p>
       </div>
 
       <!-- PURPOSE -->
       <div class="card card-highlight">
-        <h3 style="margin-bottom:16px;">Purpose</h3>
+        <h3 style="margin-bottom:16px;">存在意義（Purpose）</h3>
         <p style="color:var(--text-primary); font-size:1rem; line-height:1.8; font-weight:400; margin-bottom:0;">
-          We sincerely refine technology that contributes to human prosperity and expand new access created by transformation.<br><br>
-          To never stop progressing, to continuously enhance technological value through implementation-based approaches, and to provide convenience—this is our purpose
+          人の豊かさにつながる技術を誠実に磨き、変革が生む新しいアクセスを広げます。<br><br>
+          進歩を止めず、実装ベースでの技術価値を高め続け利便性を提供すること、それが私たちの存在意義です
         </p>
       </div>
 
@@ -845,14 +845,14 @@ footer{
 </section>
 
 <!-- ========================================
-     SECTION 3: Our Business (3+1 Layout)
+     SECTION 3: 事業領域 (3+1 Layout)
 ======================================== -->
 <section id="business">
   <div class="wrap">
-    <h2>Our Business</h2>
+    <h2>事業領域（Our Business）</h2>
     <p style="color:var(--text-secondary); max-width:850px; margin-bottom:48px; font-size:1rem; line-height:1.75;">
-      Avisail leverages AI technology across four business domains to revolutionize traditional methods.<br>
-      Each business operates independently yet is united by a common AI foundation
+      Avisailは、4つの事業領域でAI技術を活用し、従来の手法を革新します。<br>
+      それぞれの事業は独立していながら、共通のAI基盤によって結びついています
     </p>
 
     <!-- TOP 3 BUSINESSES -->
@@ -861,63 +861,63 @@ footer{
       <!-- TRADING -->
       <div class="card" id="business-trading">
         <div class="thumb" style="background-image:url('images/vessel-trading.jpg');"></div>
-        <h3>Trading</h3>
+        <h3>貿易（Trading）</h3>
         <p>
-          A global vessel matching platform connecting Asia and the world.<br>
-          AI-driven inventory management and real-time market analysis enable swift matching of optimal vessels.<br>
-          Secure payment structures and escrow services eliminate concerns in international transactions
+          アジアと世界を繋ぐグローバル船舶マッチングプラットフォーム。<br>
+          AI駆動型の在庫管理とリアルタイム市場分析により、最適な船舶を迅速にマッチング。<br>
+          安全な決済構造とエスクローサービスで、国際取引の不安を解消します
         </p>
         <div class="use-case-box">
-          <h4>Use Case: Ensuring Safe International Transactions</h4>
-          <p>Companies considering their first vessel purchase. Escrow services and transparent transaction processes eliminate concerns arising from language and cultural differences</p>
+          <h4>ユースケース: 国際取引の安全性確保</h4>
+          <p>初めての船舶購入を検討する企業。言語・商習慣の違いによる不安を、エスクローサービスと透明な取引プロセスで解消</p>
           <div class="use-case-details">
-            <span><strong>Industry:</strong> Logistics & Shipping</span>
-            <span><strong>Challenge:</strong> Concerns about international transactions</span>
-            <span><strong>Solution:</strong> Vessel Trading Platform</span>
+            <span><strong>業種:</strong> 物流・海運</span>
+            <span><strong>課題:</strong> 国際取引の不安</span>
+            <span><strong>ソリューション:</strong> 船舶売買プラットフォーム</span>
           </div>
         </div>
-        <a href="#" class="btn" style="margin-top:auto;">Learn More</a>
+        <a href="#" class="btn" style="margin-top:auto;">詳細を見る</a>
       </div>
 
       <!-- INVESTMENT -->
       <div class="card" id="business-investment">
         <div class="thumb" style="background-image:url('images/investment.jpg');"></div>
-        <h3>Investment</h3>
+        <h3>投資（Investment）</h3>
         <p>
-          Solid asset formation emphasizing stability and growth through the AI-driven asset management engine "Aviscore."<br>
-          Combining FX automated trading and ETF portfolio strategies, we respond flexibly to market fluctuations while minimizing risk
+          AI駆動型資産管理エンジン「Aviscore」による安定性と成長を重視した堅実な資産形成。<br>
+          FX自動売買とETFポートフォリオ戦略を組み合わせ、市場の変動に柔軟に対応しながらリスクを抑えた運用を実現します
         </p>
         <div class="use-case-box">
-          <h4>Use Case: Startup Asset Management</h4>
-          <p>A rapidly growing SaaS company. The challenge was efficient management of surplus funds. Automated management by Aviscore achieves stable returns while allowing focus on core business</p>
+          <h4>ユースケース: スタートアップの資産運用</h4>
+          <p>急成長中のSaaS企業。余剰資金の効率的運用が課題。Aviscoreによる自動運用で、本業に集中しながら安定的なリターンを実現</p>
           <div class="use-case-details">
-            <span><strong>Industry:</strong> SaaS / Technology</span>
-            <span><strong>Challenge:</strong> Efficient management of surplus funds</span>
-            <span><strong>Solution:</strong> AI Asset Management</span>
+            <span><strong>業種:</strong> SaaS / テクノロジー</span>
+            <span><strong>課題:</strong> 余剰資金の効率運用</span>
+            <span><strong>ソリューション:</strong> AI資産運用</span>
           </div>
         </div>
-        <a href="#" class="btn" style="margin-top:auto;">Learn More</a>
+        <a href="#" class="btn" style="margin-top:auto;">詳細を見る</a>
       </div>
 
       <!-- SECURITY -->
       <div class="card" id="business-security">
         <div class="thumb" style="background-image:url('images/security.jpg');"></div>
-        <h3>Security</h3>
+        <h3>セキュリティ（Security）</h3>
         <p>
-          Active defense-type cybersecurity solution "ADCS" for SMEs and municipalities.<br>
-          OSINT analysis and AI-driven threat detection enable security diagnostics from an attacker's perspective.<br>
-          We provide a foundation that serves as a bridge to full SOC
+          中小企業・自治体向けのアクティブディフェンス型サイバーセキュリティソリューション「ADCS」。<br>
+          OSINT分析とAI駆動の脅威検出により、攻撃者視点でのセキュリティ診断を実現。<br>
+          フルSOCへの架け橋となる基盤を提供します
         </p>
         <div class="use-case-box">
-          <h4>Use Case: Strengthening Mid-Size Company Security</h4>
-          <p>A manufacturing company with 50 employees. Within an aging infrastructure and limited budget, we visualize attack surfaces and establish incident response systems. Reports can also serve as explanatory materials for business partners</p>
+          <h4>ユースケース: 中堅企業のセキュリティ強化</h4>
+          <p>従業員50名規模の製造業。古いインフラと限られた予算の中で、攻撃面の可視化とインシデント初動体制を構築。取引先への説明資料としても活用可能なレポートを提供</p>
           <div class="use-case-details">
-            <span><strong>Industry:</strong> Manufacturing</span>
-            <span><strong>Challenge:</strong> Legacy system security</span>
-            <span><strong>Solution:</strong> ADCS Continuous Assessment</span>
+            <span><strong>業種:</strong> 製造業</span>
+            <span><strong>課題:</strong> レガシーシステムのセキュリティ</span>
+            <span><strong>ソリューション:</strong> ADCS継続診断</span>
           </div>
         </div>
-        <a href="#" class="btn" style="margin-top:auto;">Learn More</a>
+        <a href="#" class="btn" style="margin-top:auto;">詳細を見る</a>
       </div>
 
     </div>
@@ -925,11 +925,11 @@ footer{
     <!-- AI & DEVELOPMENT (Full width bottom) -->
     <div class="business-tech">
       <div class="thumb" style="background-image:url('images/ai-development.jpg'); max-width:600px; margin:0 auto 20px; height:200px;"></div>
-      <h3>AI & Development</h3>
+      <h3>技術開発（AI & Development）</h3>
       <p>
-        The technical foundation supporting all three business domains.<br>
-        Following an implementation-first philosophy, we develop AI systems ready for real-world operation from day one.<br>
-        Data pipelines, automation, and intelligent decision support accelerate the competitive edge of each business
+        3つの事業領域全てを支える技術基盤。<br>
+        実装ファーストの哲学のもと、初日から実運用可能なAIシステムを開発。<br>
+        データパイプライン、自動化、インテリジェントな意思決定支援により、各事業の競争力を加速します
       </p>
     </div>
   </div>
@@ -940,43 +940,43 @@ footer{
 ======================================== -->
 <section id="technology-foundation" style="background:rgba(5,8,15,0.3);">
   <div class="wrap">
-    <h2>Technology Foundation</h2>
+    <h2>技術基盤（Technology Foundation）</h2>
 
     <p style="color:var(--text-secondary); max-width:900px; margin-bottom:40px; font-size:1rem; line-height:1.75;">
-      All of Avisail's businesses are united by a single technical foundation.<br>
-      AI-driven analysis and automation, data infrastructure, security evaluation, and unified user experience.<br>
-      These combined elements generate implementation capabilities common to trading, investment, security, and development
+      Avisailのすべての事業は、ひとつの技術基盤によって結びついています。<br>
+      AIによる解析・自動化、データインフラ、セキュリティ評価、ユーザー体験の統合。<br>
+      これらが組み合わさることで、貿易・投資・セキュリティ・開発に共通する実装力を生み出しています
     </p>
 
     <div class="grid-3">
 
       <!-- DEVELOPMENT ENVIRONMENT -->
       <div class="card">
-        <h3 class="mt-0 mb-2">Development Environment</h3>
+        <h3 class="mt-0 mb-2">開発環境</h3>
         <ul style="margin:0; padding:0 0 0 20px; color:var(--text-muted); line-height:1.9; font-size:0.95rem;">
-          <li><strong style="color:#fff;">AI/ML:</strong> Custom Optimized Models</li>
-          <li><strong style="color:#fff;">Backend:</strong> Python, Node.js, FastAPI</li>
-          <li><strong style="color:#fff;">Frontend:</strong> React, Next.js, TypeScript</li>
-          <li><strong style="color:#fff;">Infrastructure:</strong> AWS, GCP, Docker, CI/CD</li>
-          <li><strong style="color:#fff;">Security:</strong> OSINT API Integration, Threat Detection Systems</li>
+          <li><strong style="color:#fff;">AI/ML:</strong> 自社最適モデル</li>
+          <li><strong style="color:#fff;">Backend:</strong> Python、Node.js、FastAPI</li>
+          <li><strong style="color:#fff;">Frontend:</strong> React、Next.js、TypeScript</li>
+          <li><strong style="color:#fff;">Infrastructure:</strong> AWS、GCP、Docker、CI/CD</li>
+          <li><strong style="color:#fff;">Security:</strong> OSINT API統合、脅威検知システム</li>
         </ul>
       </div>
 
       <!-- GLOBAL NETWORK -->
       <div class="card">
-        <h3 class="mt-0 mb-2">Global Network</h3>
+        <h3 class="mt-0 mb-2">グローバルネットワーク</h3>
         <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:0;">
-          Technical partnerships with experts worldwide enable 24/7 development and support.<br>
-          Collaborating with technology partners across Asia, the Middle East, and Europe, we deliver solutions tailored to each region's market characteristics.<br><br>
-          Optimal resource management allows us to propose cost-competitive packages
+          世界中の専門家との技術提携により、24時間体制での開発とサポートを実現。<br>
+          アジア・中東・欧州の技術パートナーと連携し、各地域の市場特性に応じたソリューションを提供します。<br><br>
+          また最適なリソース運用により、コスト競争性のあるパッケージをご提案します
         </p>
       </div>
 
       <!-- IN-HOUSE SECURITY -->
       <div class="card">
-        <h3 class="mt-0 mb-2">In-House Security</h3>
+        <h3 class="mt-0 mb-2">自社セキュリティ</h3>
         <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:0;">
-          Through our proprietary diagnostic system operations and partnerships with experts, we protect customer information
+          自社開発の診断システム運用並びに専門家との提携により、お客さまの情報を保護いたします
         </p>
       </div>
 
@@ -989,33 +989,33 @@ footer{
 ======================================== -->
 <section id="proven-results">
   <div class="wrap">
-    <h2>Proven Results</h2>
+    <h2>実績と信頼性（Proven Results）</h2>
 
     <p style="color:var(--text-secondary); max-width:850px; margin-bottom:36px; font-size:1rem; line-height:1.75;">
-      Avisail's technology operates in real environments and accumulates proven results.<br>
-      Our credibility is demonstrated not by organizational scale, but by implementation capabilities and operational track record
+      Avisailの技術は、実環境で稼働し、実績を積み重ねています。<br>
+      組織の規模ではなく、技術の実装力と稼働実績が私たちの信頼性を証明します
     </p>
 
     <div class="stats-grid">
 
       <div class="stat-item">
         <div class="stat-number">24/7</div>
-        <div class="stat-label">System Operation</div>
+        <div class="stat-label">システム稼働</div>
       </div>
 
       <div class="stat-item">
-        <div class="stat-number">Multilingual</div>
-        <div class="stat-label">All Languages</div>
+        <div class="stat-number">多言語</div>
+        <div class="stat-label">全言語対応</div>
       </div>
 
       <div class="stat-item">
         <div class="stat-number">10+</div>
-        <div class="stat-label">Security Checks</div>
+        <div class="stat-label">セキュリティチェック</div>
       </div>
 
       <div class="stat-item">
         <div class="stat-number">Global</div>
-        <div class="stat-label">Asia · Middle East · Europe</div>
+        <div class="stat-label">アジア・中東・欧州</div>
       </div>
 
     </div>
@@ -1028,18 +1028,18 @@ footer{
 ======================================== -->
 <section id="why-avisail" style="background:rgba(5,8,15,0.3);">
   <div class="wrap">
-    <h2>Why Choose Avisail?</h2>
+    <h2>選ばれる理由（Why Choose Avisail?）</h2>
 
     <div class="why-avisail-grid">
 
       <div class="why-card">
         <div class="why-icon">⚡</div>
         <div class="why-content">
-          <h3>Implementation-First Philosophy</h3>
+          <h3>実装ファースト哲学</h3>
           <p>
-            We deliver systems that actually work from day one, not just theories and plans.<br>
-            All solutions are built on technology we operate in-house.<br>
-            We deliver proven value directly to our customers
+            理論や計画だけでなく、実際に動くシステムを初日から提供します。<br>
+            全てのソリューションは、自社で実運用している技術をベースに構築。<br>
+            実証済みの価値を、そのままお客様に届けます
           </p>
         </div>
       </div>
@@ -1047,11 +1047,11 @@ footer{
       <div class="why-card">
         <div class="why-icon">🤖</div>
         <div class="why-content">
-          <h3>AI-Driven Efficiency</h3>
+          <h3>AI駆動の効率性</h3>
           <p>
-            Without relying on manual work, AI-driven automation achieves 24/7 operation.<br>
-            This enables us to provide enterprise-grade services at one-tenth the traditional cost.<br>
-            We achieve both high quality and speed with a small team
+            人手に頼らず、AIによる自動化で24/7稼働を実現。<br>
+            これにより、従来の10分の1のコストで、エンタープライズグレードのサービスを提供できます。<br>
+            少人数でも高い品質と速度を両立します
           </p>
         </div>
       </div>
@@ -1059,10 +1059,10 @@ footer{
       <div class="why-card">
         <div class="why-icon">🌏</div>
         <div class="why-content">
-          <h3>Global Perspective, Local Response</h3>
+          <h3>グローバル視点、ローカル対応</h3>
           <p>
-            Our business expansion across Asia, the Middle East, and Europe balances international vision with locally appropriate solutions.<br>
-            We support global growth through multilingual support and understanding of each country's business customs
+            アジア・中東・欧州にまたがる事業展開により、国際的な視野と現地に即したソリューションを両立。<br>
+            多言語対応と各国の商習慣への理解で、グローバルな成長を支援します
           </p>
         </div>
       </div>
@@ -1076,15 +1076,15 @@ footer{
 ======================================== -->
 <section id="contact">
   <div class="wrap">
-    <h2>Contact Us</h2>
+    <h2>お問い合わせ（Contact Us）</h2>
 
     <p style="color:var(--text-secondary); max-width:850px; margin-bottom:48px; font-size:1rem; line-height:1.75;">
-      Feel free to contact us with questions, service inquiries, or partnership proposals.<br>
-      Our team will respond within 24 hours
+      ご質問、サービスのご相談、パートナーシップのご提案など、お気軽にご連絡ください。<br>
+      担当者が24時間以内に返信いたします
     </p>
 
     <div class="card" style="max-width:900px; margin:0 auto;">
-        <h3 class="mt-0">Contact Form</h3>
+        <h3 class="mt-0">お問い合わせフォーム</h3>
 
         <div style="margin-bottom:28px; display:flex; flex-direction:column; gap:14px; font-size:0.95rem; padding:16px; background:rgba(126,240,212,0.03); border-radius:12px; border:1px solid rgba(126,240,212,0.15);">
           <div style="display:flex; align-items:center; gap:12px;">
@@ -1093,44 +1093,44 @@ footer{
           </div>
           <div style="display:flex; align-items:center; gap:12px;">
             <span style="font-size:1.3rem;">🌐</span>
-            <span style="color:var(--text-muted);">Multilingual: 日本語 / English / Italiano</span>
+            <span style="color:var(--text-muted);">多言語対応: 日本語 / English / Italiano</span>
           </div>
           <div style="display:flex; align-items:center; gap:12px;">
             <span style="font-size:1.3rem;">⏰</span>
-            <span style="color:var(--text-muted);">24-hour response</span>
+            <span style="color:var(--text-muted);">24時間以内に返信</span>
           </div>
         </div>
 
         <form>
           <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <label for="name">お名前 *</label>
+            <input type="text" id="name" name="name" placeholder="山田 太郎" required>
           </div>
 
           <div class="form-group">
-            <label for="email">Email Address *</label>
+            <label for="email">メールアドレス *</label>
             <input type="email" id="email" name="email" placeholder="your@email.com" required>
           </div>
 
           <div class="form-group">
-            <label for="business">Business Area of Interest *</label>
+            <label for="business">関心のある事業領域 *</label>
             <select id="business" name="business" required>
-              <option value="">Please select</option>
-              <option value="trading">Trading (Vessel Sales)</option>
-              <option value="investment">Investment (Asset Management)</option>
-              <option value="security">Security (ADCS / Cybersecurity)</option>
-              <option value="ai-dev">AI & Development</option>
-              <option value="partnership">Partnership / Collaboration</option>
-              <option value="other">Other</option>
+              <option value="">選択してください</option>
+              <option value="trading">Trading（船舶売買）</option>
+              <option value="investment">Investment（資産運用）</option>
+              <option value="security">Security（ADCS / サイバーセキュリティ）</option>
+              <option value="ai-dev">AI & Development（AI開発）</option>
+              <option value="partnership">Partnership / 協業</option>
+              <option value="other">その他</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Please describe your inquiry"></textarea>
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" placeholder="ご相談内容をご記入ください"></textarea>
           </div>
 
-          <button type="submit" class="cta">Send Message</button>
+          <button type="submit" class="cta">送信する</button>
         </form>
     </div>
   </div>
@@ -1141,51 +1141,51 @@ footer{
 ======================================== -->
 <section id="faq" style="background:rgba(5,8,15,0.3);">
   <div class="wrap">
-    <h2>FAQ</h2>
+    <h2>よくある質問（FAQ）</h2>
 
     <div style="max-width:900px; margin:0 auto;">
 
       <div class="faq-item">
-        <div class="faq-q">Q1. What kind of company is Avisail Technologies?</div>
+        <div class="faq-q">Q1. Avisail Technologiesはどのような会社ですか？</div>
         <div class="faq-a">
-          Avisail is a technology company operating in four domains: <strong>vessel trading, asset management, cybersecurity, and AI development</strong>, all based on AI technology.<br>
-          With an implementation-first approach unconstrained by industry conventions, we achieve both high speed and quality even with a small team
+          Avisailは、AI技術を基盤に<strong>船舶貿易・資産運用・サイバーセキュリティ・AI開発</strong>の4領域を展開するテクノロジー企業です。<br>
+          業界の慣習に縛られない実装ファーストのアプローチで、少人数でも高いスピードと品質を両立します
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">Q2. Can both corporations and individuals use your services?</div>
+        <div class="faq-q">Q2. 法人・個人どちらでも利用できますか？</div>
         <div class="faq-a">
-          Yes.<br>
-          Availability varies by service, but <strong>both corporations and individuals can use our services</strong>.<br>
-          Vessel trading and cybersecurity primarily target corporations, while investment and some AI services are also available to individuals
+          はい。<br>
+          事業により異なりますが、<strong>法人・個人ともにご利用いただけます</strong>。<br>
+          船舶売買・サイバーセキュリティは主に法人向け、投資および一部AIサービスは個人にも対応しています
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">Q3. Do you support global operations?</div>
+        <div class="faq-q">Q3. グローバル対応は可能ですか？</div>
         <div class="faq-a">
-          Yes, we do.<br>
-          Avisail is designed for transactions across Asia, the Middle East, and Europe, enabling <strong>multilingual, multi-currency, and internationally compliant support</strong>.<br>
-          We provide support in multiple languages including Japanese, English, and Italian
+          はい、可能です。<br>
+          Avisailはアジア・中東・欧州との取引を前提に設計されているため、<strong>多言語・多通貨・国際法務を考慮した対応</strong>が可能です。<br>
+          日本語・英語・イタリア語を含む多言語でのサポートを提供しています
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">Q4. How do you approach security and privacy?</div>
+        <div class="faq-q">Q4. セキュリティやプライバシーへの配慮は？</div>
         <div class="faq-a">
-          Data protection and privacy are our top priorities.<br>
-          We implement technical security measures including communication encryption, access management, and regular vulnerability assessments.<br>
-          For details, please refer to our <a href="ja/legal/privacy-policy.html">Privacy Policy</a> and <a href="ja/legal/security.html">Security Policy</a>
+          データ保護とプライバシーを最優先事項としています。<br>
+          通信の暗号化、アクセス管理、定期的な脆弱性診断などの技術的安全対策を実施。<br>
+          詳細は<a href="ja/legal/privacy-policy.html">プライバシーポリシー</a>および<a href="ja/legal/security.html">セキュリティ方針</a>をご確認ください
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-q">Q5. Can we discuss partnerships or collaborations?</div>
+        <div class="faq-q">Q5. パートナーシップや協業の相談は可能ですか？</div>
         <div class="faq-a">
-          Yes, we actively welcome such discussions.<br>
-          Please select "Partnership" in the contact form and reach out to us.<br>
-          We welcome various forms of collaboration, including technical partnerships, sales agencies, and joint development
+          はい、積極的に検討しております。<br>
+          お問い合わせフォームより「パートナーシップ」を選択してご連絡ください。<br>
+          技術提携、販売代理店、共同開発など、様々な形態での協業を歓迎します
         </div>
       </div>
 
@@ -1208,7 +1208,7 @@ footer{
           <span style="font-size:1.1rem; font-weight:600; letter-spacing:0.08em; color:#fff;">AVISAIL</span>
         </div>
         <p class="footer-brand">
-          A next-generation technology company redefining trading, investment, and security through the power of AI and technological exploration
+          AIと技術探究の力で、貿易・投資・セキュリティを再定義する次世代テクノロジー企業
         </p>
       </div>
 
@@ -1216,9 +1216,9 @@ footer{
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#business-trading">Vessel Trading</a></li>
-          <li><a href="#business-investment">Asset Management</a></li>
-          <li><a href="#business-security">Security (ADCS)</a></li>
+          <li><a href="#business-trading">船舶売買（Trading）</a></li>
+          <li><a href="#business-investment">資産運用（Investment）</a></li>
+          <li><a href="#business-security">セキュリティ（ADCS）</a></li>
           <li><a href="#business">AI & Development</a></li>
         </ul>
       </div>
@@ -1227,9 +1227,9 @@ footer{
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#about">会社概要</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="#faq">よくある質問</a></li>
         </ul>
       </div>
 
@@ -1237,10 +1237,10 @@ footer{
       <div class="footer-col">
         <h4>Legal</h4>
         <ul>
-          <li><a href="ja/legal/privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="ja/legal/terms.html">Terms of Service</a></li>
-          <li><a href="ja/legal/cookies.html">Cookie Policy</a></li>
-          <li><a href="ja/legal/security.html">Security Policy</a></li>
+          <li><a href="ja/legal/privacy-policy.html">プライバシーポリシー</a></li>
+          <li><a href="ja/legal/terms.html">利用規約</a></li>
+          <li><a href="ja/legal/cookies.html">クッキーポリシー</a></li>
+          <li><a href="ja/legal/security.html">セキュリティ方針</a></li>
         </ul>
       </div>
 
@@ -1250,9 +1250,9 @@ footer{
     <div class="footer-bottom">
       <p style="margin:0;">© 2025 Avisail Technologies — All rights reserved.</p>
       <div style="display:flex; gap:10px;">
-        <a href="index.html" style="color:#fff;">English</a>
+        <a href="index.jp" style="color:#fff;">日本語</a>
         <span style="color:#506080;">|</span>
-        <a href="index.jp">日本語</a>
+        <a href="index.html">English</a>
       </div>
     </div>
 
