@@ -280,7 +280,7 @@ nav ul{
 .lead{
   font-size:1.05rem;
   color:var(--text-secondary);
-  max-width:750px;
+  max-width:900px;
   margin-bottom:20px;
   line-height:1.75;
 }
@@ -410,6 +410,45 @@ h3{
   line-height:1.75;
   margin:0 auto;
   max-width:900px;
+}
+
+/* ========== USE CASE BOX ========== */
+.use-case-box{
+  background:rgba(126,240,212,0.03);
+  border:1px solid rgba(126,240,212,0.15);
+  border-radius:12px;
+  padding:16px 20px;
+  margin-top:16px;
+}
+
+.use-case-box h4{
+  color:var(--accent-teal);
+  font-size:0.95rem;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+.use-case-box p{
+  color:var(--text-muted);
+  font-size:0.9rem;
+  line-height:1.7;
+  margin-bottom:12px;
+}
+
+.use-case-details{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:0.85rem;
+  color:var(--text-muted);
+}
+
+.use-case-details span{
+  display:block;
+}
+
+.use-case-details strong{
+  color:var(--text-secondary);
 }
 
 /* ========== STATS ========== */
@@ -761,7 +800,7 @@ footer{
     </h1>
 
     <p class="lead">
-      Avisail Technologiesは、AIと技術探究の力で貿易・投資・セキュリティを再定義する次世代テクノロジー企業です
+      Avisail Technologiesは、AIと技術探究の力で貿易・投資・セキュリティを再定義する次世代テクノロジー企業です。<br>
       AIによる自動化・分析・意思決定支援が、国際船舶取引から資産運用、サイバーセキュリティまで、あらゆるビジネス領域を支えます
     </p>
 
@@ -777,27 +816,27 @@ footer{
 ======================================== -->
 <section id="about">
   <div class="wrap">
+    <h2>会社概要（About Us）</h2>
     <div class="grid-2">
 
       <!-- PASSION -->
       <div class="card">
-        <h2 style="margin-bottom:16px;">情熱（Passion）</h2>
+        <h3 style="margin-bottom:16px;">情熱（Passion）</h3>
         <p style="color:var(--text-secondary); font-size:1rem; line-height:1.8; margin-bottom:0;">
-          世界に距離の概念は、もはや存在しないと考えます
-          文化も市場も隣り合い、新たな技術は常に目の前に現れます
-          目前に巨大な船（新たな技術）が現れたとき、私たちは恐れず前に進み、テクノロジーを実際に価値ある使い方へと導きます
-          勇気はイノベーションの火種です
+          世界に距離の概念は、もはや存在しないと考えます<br>
+          文化も市場も隣り合い、新たな技術は常に目の前に現れます<br><br>
+          目前に巨大な船（新たな技術）が現れたとき、私たちは恐れず前に進み、テクノロジーを実際に価値ある使い方へと導きます<br><br>
+          勇気はイノベーションの火種です<br>
           その価値を人々に届けることに、私たちは情熱を注ぎます
         </p>
       </div>
 
       <!-- PURPOSE -->
       <div class="card card-highlight">
-        <h2 style="margin-bottom:16px;">存在意義（Purpose）</h2>
+        <h3 style="margin-bottom:16px;">存在意義（Purpose）</h3>
         <p style="color:var(--text-primary); font-size:1rem; line-height:1.8; font-weight:400; margin-bottom:0;">
-          人の豊かさにつながる技術を誠実に磨き、変革が生む新しいアクセスを広げる
-          進歩を止めず、価値を高め続けること
-          それが私たちの存在意義です
+          人の豊かさにつながる技術を誠実に磨き、変革が生む新しいアクセスを広げます。<br><br>
+          進歩を止めず、実装ベースでの技術価値を高め続け利便性を提供すること、それが私たちの存在意義です
         </p>
       </div>
 
@@ -810,9 +849,9 @@ footer{
 ======================================== -->
 <section id="business">
   <div class="wrap">
-    <h2>事業領域 Our Business</h2>
+    <h2>事業領域（Our Business）</h2>
     <p style="color:var(--text-secondary); max-width:850px; margin-bottom:48px; font-size:1rem; line-height:1.75;">
-      Avisailは、4つの事業領域でAI技術を活用し、従来の手法を革新します
+      Avisailは、4つの事業領域でAI技術を活用し、従来の手法を革新します。<br>
       それぞれの事業は独立していながら、共通のAI基盤によって結びついています
     </p>
 
@@ -824,10 +863,19 @@ footer{
         <div class="thumb" style="background-image:url('images/vessel-trading.jpg');"></div>
         <h3>貿易（Trading）</h3>
         <p>
-          アジアと世界を繋ぐグローバル船舶マッチングプラットフォーム
-          AI駆動型の在庫管理とリアルタイム市場分析により、最適な船舶を迅速にマッチング
+          アジアと世界を繋ぐグローバル船舶マッチングプラットフォーム。<br>
+          AI駆動型の在庫管理とリアルタイム市場分析により、最適な船舶を迅速にマッチング。<br>
           安全な決済構造とエスクローサービスで、国際取引の不安を解消します
         </p>
+        <div class="use-case-box">
+          <h4>ユースケース: 国際取引の安全性確保</h4>
+          <p>初めての船舶購入を検討する企業。言語・商習慣の違いによる不安を、エスクローサービスと透明な取引プロセスで解消</p>
+          <div class="use-case-details">
+            <span><strong>業種:</strong> 物流・海運</span>
+            <span><strong>課題:</strong> 国際取引の不安</span>
+            <span><strong>ソリューション:</strong> 船舶売買プラットフォーム</span>
+          </div>
+        </div>
         <a href="#" class="btn" style="margin-top:auto;">詳細を見る</a>
       </div>
 
@@ -836,9 +884,18 @@ footer{
         <div class="thumb" style="background-image:url('images/investment.jpg');"></div>
         <h3>投資（Investment）</h3>
         <p>
-          AI駆動型資産管理エンジン「Aviscore」による安定性と成長を重視した堅実な資産形成
+          AI駆動型資産管理エンジン「Aviscore」による安定性と成長を重視した堅実な資産形成。<br>
           FX自動売買とETFポートフォリオ戦略を組み合わせ、市場の変動に柔軟に対応しながらリスクを抑えた運用を実現します
         </p>
+        <div class="use-case-box">
+          <h4>ユースケース: スタートアップの資産運用</h4>
+          <p>急成長中のSaaS企業。余剰資金の効率的運用が課題。Aviscoreによる自動運用で、本業に集中しながら安定的なリターンを実現</p>
+          <div class="use-case-details">
+            <span><strong>業種:</strong> SaaS / テクノロジー</span>
+            <span><strong>課題:</strong> 余剰資金の効率運用</span>
+            <span><strong>ソリューション:</strong> AI資産運用</span>
+          </div>
+        </div>
         <a href="#" class="btn" style="margin-top:auto;">詳細を見る</a>
       </div>
 
@@ -847,10 +904,19 @@ footer{
         <div class="thumb" style="background-image:url('images/security.jpg');"></div>
         <h3>セキュリティ（Security）</h3>
         <p>
-          中小企業・自治体向けのアクティブディフェンス型サイバーセキュリティソリューション「ADCS」
-          OSINT分析とAI駆動の脅威検出により、攻撃者視点でのセキュリティ診断を実現
+          中小企業・自治体向けのアクティブディフェンス型サイバーセキュリティソリューション「ADCS」。<br>
+          OSINT分析とAI駆動の脅威検出により、攻撃者視点でのセキュリティ診断を実現。<br>
           フルSOCへの架け橋となる基盤を提供します
         </p>
+        <div class="use-case-box">
+          <h4>ユースケース: 中堅企業のセキュリティ強化</h4>
+          <p>従業員50名規模の製造業。古いインフラと限られた予算の中で、攻撃面の可視化とインシデント初動体制を構築。取引先への説明資料としても活用可能なレポートを提供</p>
+          <div class="use-case-details">
+            <span><strong>業種:</strong> 製造業</span>
+            <span><strong>課題:</strong> レガシーシステムのセキュリティ</span>
+            <span><strong>ソリューション:</strong> ADCS継続診断</span>
+          </div>
+        </div>
         <a href="#" class="btn" style="margin-top:auto;">詳細を見る</a>
       </div>
 
@@ -861,8 +927,8 @@ footer{
       <div class="thumb" style="background-image:url('images/ai-development.jpg'); max-width:600px; margin:0 auto 20px; height:200px;"></div>
       <h3>技術開発（AI & Development）</h3>
       <p>
-        3つの事業領域全てを支える技術基盤
-        実装ファーストの哲学のもと、初日から実運用可能なAIシステムを開発
+        3つの事業領域全てを支える技術基盤。<br>
+        実装ファーストの哲学のもと、初日から実運用可能なAIシステムを開発。<br>
         データパイプライン、自動化、インテリジェントな意思決定支援により、各事業の競争力を加速します
       </p>
     </div>
@@ -874,21 +940,21 @@ footer{
 ======================================== -->
 <section id="technology-foundation" style="background:rgba(5,8,15,0.3);">
   <div class="wrap">
-    <h2>技術基盤 Technology Foundation</h2>
+    <h2>技術基盤（Technology Foundation）</h2>
 
     <p style="color:var(--text-secondary); max-width:900px; margin-bottom:40px; font-size:1rem; line-height:1.75;">
-      Avisailのすべての事業は、ひとつの技術基盤によって結びついています
-      AIによる解析・自動化、データインフラ、セキュリティ評価、ユーザー体験の統合
+      Avisailのすべての事業は、ひとつの技術基盤によって結びついています。<br>
+      AIによる解析・自動化、データインフラ、セキュリティ評価、ユーザー体験の統合。<br>
       これらが組み合わさることで、貿易・投資・セキュリティ・開発に共通する実装力を生み出しています
     </p>
 
-    <div class="grid-2">
+    <div class="grid-3">
 
       <!-- DEVELOPMENT ENVIRONMENT -->
       <div class="card">
-        <h3 class="mt-0 mb-2">プロフェッショナル開発環境</h3>
+        <h3 class="mt-0 mb-2">開発環境</h3>
         <ul style="margin:0; padding:0 0 0 20px; color:var(--text-muted); line-height:1.9; font-size:0.95rem;">
-          <li><strong style="color:#fff;">AI/ML:</strong> OpenAI GPT-4、カスタムモデル、TensorFlow</li>
+          <li><strong style="color:#fff;">AI/ML:</strong> 自社最適モデル</li>
           <li><strong style="color:#fff;">Backend:</strong> Python、Node.js、FastAPI</li>
           <li><strong style="color:#fff;">Frontend:</strong> React、Next.js、TypeScript</li>
           <li><strong style="color:#fff;">Infrastructure:</strong> AWS、GCP、Docker、CI/CD</li>
@@ -899,13 +965,18 @@ footer{
       <!-- GLOBAL NETWORK -->
       <div class="card">
         <h3 class="mt-0 mb-2">グローバルネットワーク</h3>
-        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:16px;">
-          世界中の専門家とのアウトソーシング契約により、24時間体制での開発とサポートを実現
-          アジア・中東・欧州の技術パートナーと連携し、各地域の市場特性に応じたソリューションを提供します
-        </p>
         <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:0;">
-          独自のセキュリティ技術とOSINT分析により、従来のソリューションでは見逃される脅威を可視化
-          実環境で稼働する自社システムが、技術の信頼性を証明しています
+          世界中の専門家との技術提携により、24時間体制での開発とサポートを実現。<br>
+          アジア・中東・欧州の技術パートナーと連携し、各地域の市場特性に応じたソリューションを提供します。<br><br>
+          また最適なリソース運用により、コスト競争性のあるパッケージをご提案します
+        </p>
+      </div>
+
+      <!-- IN-HOUSE SECURITY -->
+      <div class="card">
+        <h3 class="mt-0 mb-2">自社セキュリティ</h3>
+        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:0;">
+          自社開発の診断システム運用並びに専門家との提携により、お客さまの情報を保護いたします
         </p>
       </div>
 
@@ -918,10 +989,10 @@ footer{
 ======================================== -->
 <section id="proven-results">
   <div class="wrap">
-    <h2>実績と信頼性</h2>
+    <h2>実績と信頼性（Proven Results）</h2>
 
     <p style="color:var(--text-secondary); max-width:850px; margin-bottom:36px; font-size:1rem; line-height:1.75;">
-      Avisailの技術は、実環境で稼働し、実績を積み重ねています
+      Avisailの技術は、実環境で稼働し、実績を積み重ねています。<br>
       組織の規模ではなく、技術の実装力と稼働実績が私たちの信頼性を証明します
     </p>
 
@@ -957,7 +1028,7 @@ footer{
 ======================================== -->
 <section id="why-avisail" style="background:rgba(5,8,15,0.3);">
   <div class="wrap">
-    <h2>Why Choose Avisail?</h2>
+    <h2>選ばれる理由（Why Choose Avisail?）</h2>
 
     <div class="why-avisail-grid">
 
@@ -966,8 +1037,8 @@ footer{
         <div class="why-content">
           <h3>実装ファースト哲学</h3>
           <p>
-            理論や計画だけでなく、実際に動くシステムを初日から提供します
-            全てのソリューションは、自社で実運用している技術をベースに構築
+            理論や計画だけでなく、実際に動くシステムを初日から提供します。<br>
+            全てのソリューションは、自社で実運用している技術をベースに構築。<br>
             実証済みの価値を、そのままお客様に届けます
           </p>
         </div>
@@ -978,8 +1049,8 @@ footer{
         <div class="why-content">
           <h3>AI駆動の効率性</h3>
           <p>
-            人手に頼らず、AIによる自動化で24/7稼働を実現
-            これにより、従来の10分の1のコストで、エンタープライズグレードのサービスを提供できます
+            人手に頼らず、AIによる自動化で24/7稼働を実現。<br>
+            これにより、従来の10分の1のコストで、エンタープライズグレードのサービスを提供できます。<br>
             少人数でも高い品質と速度を両立します
           </p>
         </div>
@@ -990,7 +1061,7 @@ footer{
         <div class="why-content">
           <h3>グローバル視点、ローカル対応</h3>
           <p>
-            アジア・中東・欧州にまたがる事業展開により、国際的な視野と現地に即したソリューションを両立
+            アジア・中東・欧州にまたがる事業展開により、国際的な視野と現地に即したソリューションを両立。<br>
             多言語対応と各国の商習慣への理解で、グローバルな成長を支援します
           </p>
         </div>
@@ -1005,18 +1076,31 @@ footer{
 ======================================== -->
 <section id="contact">
   <div class="wrap">
-    <h2>お問い合わせ</h2>
+    <h2>お問い合わせ（Contact Us）</h2>
 
     <p style="color:var(--text-secondary); max-width:750px; margin-bottom:36px; font-size:1rem; line-height:1.75;">
-      ご質問、サービスのご相談、パートナーシップのご提案など、お気軽にご連絡ください
+      ご質問、サービスのご相談、パートナーシップのご提案など、お気軽にご連絡ください。<br>
       担当者が24時間以内に返信いたします
     </p>
 
-    <div class="grid-2">
-
-      <!-- CONTACT FORM -->
+    <div style="max-width:700px; margin:0 auto;">
       <div class="card">
-        <h3 class="mt-0">フォーム</h3>
+        <h3 class="mt-0">お問い合わせフォーム</h3>
+
+        <div style="margin-bottom:28px; display:flex; flex-direction:column; gap:14px; font-size:0.95rem; padding:16px; background:rgba(126,240,212,0.03); border-radius:12px; border:1px solid rgba(126,240,212,0.15);">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:1.3rem;">📧</span>
+            <a href="mailto:contact@avisail.tech" style="color:var(--accent-teal);">contact@avisail.tech</a>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:1.3rem;">🌐</span>
+            <span style="color:var(--text-muted);">多言語対応: 日本語 / English / Italiano</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:1.3rem;">⏰</span>
+            <span style="color:var(--text-muted);">24時間以内に返信</span>
+          </div>
+        </div>
 
         <form>
           <div class="form-group">
@@ -1050,31 +1134,6 @@ footer{
           <button type="submit" class="cta">送信する</button>
         </form>
       </div>
-
-      <!-- CONTACT INFO -->
-      <div class="card">
-        <h3 class="mt-0">お問い合わせ先</h3>
-        <p style="margin-bottom:24px; line-height:1.8;">
-          メールまたはフォームからお問い合わせください
-          営業時間外でも24時間以内にご返信いたします
-        </p>
-
-        <div style="display:flex; flex-direction:column; gap:16px; font-size:0.95rem;">
-          <div style="display:flex; align-items:center; gap:12px;">
-            <span style="font-size:1.3rem;">📧</span>
-            <a href="mailto:contact@avisail.tech" style="color:var(--accent-teal);">contact@avisail.tech</a>
-          </div>
-          <div style="display:flex; align-items:center; gap:12px;">
-            <span style="font-size:1.3rem;">🌐</span>
-            <span style="color:var(--text-muted);">多言語対応: 日本語 / English / Italiano</span>
-          </div>
-          <div style="display:flex; align-items:center; gap:12px;">
-            <span style="font-size:1.3rem;">⏰</span>
-            <span style="color:var(--text-muted);">24時間以内に返信</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -1084,14 +1143,14 @@ footer{
 ======================================== -->
 <section id="faq" style="background:rgba(5,8,15,0.3);">
   <div class="wrap">
-    <h2>FAQ</h2>
+    <h2>よくある質問（FAQ）</h2>
 
     <div style="max-width:900px; margin:0 auto;">
 
       <div class="faq-item">
         <div class="faq-q">Q1. Avisail Technologiesはどのような会社ですか？</div>
         <div class="faq-a">
-          Avisailは、AI技術を基盤に<strong>船舶貿易・資産運用・サイバーセキュリティ・AI開発</strong>の4領域を展開するテクノロジー企業です
+          Avisailは、AI技術を基盤に<strong>船舶貿易・資産運用・サイバーセキュリティ・AI開発</strong>の4領域を展開するテクノロジー企業です。<br>
           業界の慣習に縛られない実装ファーストのアプローチで、少人数でも高いスピードと品質を両立します
         </div>
       </div>
@@ -1099,8 +1158,8 @@ footer{
       <div class="faq-item">
         <div class="faq-q">Q2. 法人・個人どちらでも利用できますか？</div>
         <div class="faq-a">
-          はい
-          事業により異なりますが、<strong>法人・個人ともにご利用いただけます</strong>
+          はい。<br>
+          事業により異なりますが、<strong>法人・個人ともにご利用いただけます</strong>。<br>
           船舶売買・サイバーセキュリティは主に法人向け、投資および一部AIサービスは個人にも対応しています
         </div>
       </div>
@@ -1108,8 +1167,8 @@ footer{
       <div class="faq-item">
         <div class="faq-q">Q3. グローバル対応は可能ですか？</div>
         <div class="faq-a">
-          はい、可能です
-          Avisailはアジア・中東・欧州との取引を前提に設計されているため、<strong>多言語・多通貨・国際法務を考慮した対応</strong>が可能です
+          はい、可能です。<br>
+          Avisailはアジア・中東・欧州との取引を前提に設計されているため、<strong>多言語・多通貨・国際法務を考慮した対応</strong>が可能です。<br>
           日本語・英語・イタリア語を含む多言語でのサポートを提供しています
         </div>
       </div>
@@ -1117,8 +1176,8 @@ footer{
       <div class="faq-item">
         <div class="faq-q">Q4. セキュリティやプライバシーへの配慮は？</div>
         <div class="faq-a">
-          データ保護とプライバシーを最優先事項としています
-          通信の暗号化、アクセス管理、定期的な脆弱性診断などの技術的安全対策を実施
+          データ保護とプライバシーを最優先事項としています。<br>
+          通信の暗号化、アクセス管理、定期的な脆弱性診断などの技術的安全対策を実施。<br>
           詳細は<a href="ja/legal/privacy-policy.html">プライバシーポリシー</a>および<a href="ja/legal/security.html">セキュリティ方針</a>をご確認ください
         </div>
       </div>
@@ -1126,8 +1185,8 @@ footer{
       <div class="faq-item">
         <div class="faq-q">Q5. パートナーシップや協業の相談は可能ですか？</div>
         <div class="faq-a">
-          はい、積極的に検討しております
-          お問い合わせフォームより「パートナーシップ」を選択してご連絡ください
+          はい、積極的に検討しております。<br>
+          お問い合わせフォームより「パートナーシップ」を選択してご連絡ください。<br>
           技術提携、販売代理店、共同開発など、様々な形態での協業を歓迎します
         </div>
       </div>
