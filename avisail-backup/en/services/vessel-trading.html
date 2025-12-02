@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Vessel Trading | Avisail Technologies</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--line:rgba(255,255,255,.08);--hero-bg:url('/images/vessel-trading-hero.jpg');}
+*{box-sizing:border-box;}
+html,body{margin:0;background:#0a0f1a;color:#e9f0ff;font-family:'Inter',sans-serif;line-height:1.7;}
+html{scroll-behavior:smooth;}
+a{color:#cfe2ff;text-decoration:none;transition:color 0.3s;}
+a:hover{color:#7ef0d4;}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px;}
+header{position:sticky;top:0;z-index:50;background:rgba(10,15,26,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(10px);}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;color:#fff;}
+.logo{width:32px;height:32px;border-radius:8px;background:conic-gradient(from 210deg,#6aa6ff,#7ef0d4);}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center;font-size:0.95rem;}
+.menu-item{position:relative;padding:10px 0;}
+.dropdown{position:absolute;top:100%;left:-10px;min-width:200px;background:#0d1424;border:1px solid var(--line);border-radius:12px;padding:12px;display:none;flex-direction:column;gap:8px;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.menu-item:hover .dropdown{display:flex;}
+.dropdown a{padding:6px 12px;border-radius:6px;color:#9fb0cc;}
+.dropdown a:hover{background:rgba(255,255,255,0.05);color:#fff;}
+.globe-icon{font-size:1.2rem;cursor:pointer;color:#9fb0cc;transition:color 0.3s;}
+.globe-icon:hover{color:#7ef0d4;}
+.page-hero{padding:140px 0 100px;text-align:center;background:linear-gradient(rgba(10,15,26,0.7),rgba(10,15,26,0.9)),var(--hero-bg) center/cover;}
+.page-hero h1{font-size:3.5rem;margin-bottom:24px;color:#fff;font-weight:700;}
+.page-hero .lead{color:#cfe2ff;max-width:800px;margin:0 auto 16px;font-size:1.2rem;}
+.muted{color:#9fb0cc;}
+section{padding:100px 0;border-bottom:1px solid var(--line);}
+h2{font-size:2rem;margin-bottom:40px;color:#fff;display:flex;align-items:center;gap:16px;}
+h2::before{content:'';width:4px;height:32px;background:linear-gradient(to bottom,#6aa6ff,#7ef0d4);display:block;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;}
+.card{background:rgba(255,255,255,0.02);border:1px solid var(--line);border-radius:24px;padding:32px;backdrop-filter:blur(5px);transition:transform 0.3s,border-color 0.3s;height:100%;display:flex;flex-direction:column;}
+.card:hover{transform:translateY(-5px);border-color:rgba(106,166,255,0.3);}
+.card h3{color:#fff;margin-top:0;font-size:1.3rem;}
+.card p{color:#9fb0cc;margin-bottom:24px;flex-grow:1;}
+.btn{display:inline-block;padding:12px 28px;border-radius:50px;border:1px solid var(--line);background:rgba(255,255,255,0.05);color:#e9f0ff;font-size:0.95rem;transition:all 0.3s;}
+.btn:hover{border-color:rgba(106,166,255,0.5);transform:translateY(-2px);}
+.cta{display:inline-block;padding:12px 28px;border-radius:50px;background:linear-gradient(135deg,#6aa6ff,#7ef0d4);color:#06101a;font-weight:700;font-size:0.95rem;box-shadow:0 10px 20px rgba(106,166,255,.2);border:none;transition:all 0.3s;}
+.cta:hover{transform:translateY(-2px);box-shadow:0 15px 30px rgba(106,166,255,.3);}
+.highlight-box{background:rgba(126,240,212,0.05);border:1px solid rgba(126,240,212,0.2);border-radius:16px;padding:40px;margin:40px 0;}
+footer{background:rgba(5,8,15,0.8);padding:60px 0 30px;border-top:1px solid var(--line);}
+.footer-content{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-bottom:40px;}
+.footer-col h4{color:#fff;font-size:1.1rem;margin-bottom:20px;}
+.footer-col ul{list-style:none;padding:0;margin:0;}
+.footer-col ul li{margin-bottom:12px;}
+.footer-col a{color:#9fb0cc;font-size:0.9rem;}
+.footer-col a:hover{color:#7ef0d4;}
+.footer-bottom{border-top:1px solid var(--line);padding-top:30px;text-align:center;color:#9fb0cc;font-size:0.85rem;}
+@media(max-width:980px){.grid-3,.grid-2{grid-template-columns:1fr;}.footer-content{grid-template-columns:1fr;}nav ul{display:none;}.page-hero h1{font-size:2.5rem;}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<div class="brand"><div class="logo"></div><span>Avisail Technologies</span></div>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/en/about.html">About</a></li>
+<li class="menu-item"><span>Services ▾</span>
+<div class="dropdown">
+<a class="active" href="/en/services/vessel-trading.html">Vessel Trading</a>
+<a href="/en/services/investment.html">Investment</a>
+<a href="/en/services/technology.html">Technology</a>
+</div>
+</li>
+<li><a href="/en/contact.html">Contact</a></li>
+<li class="menu-item"><span class="globe-icon">🌐 ▾</span>
+<div class="dropdown">
+<a href="/en/services/vessel-trading.html">English</a>
+<a href="/ja/services/vessel-trading.html">日本語</a>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="page-hero">
+<div class="wrap">
+<h1>Vessel Trading</h1>
+<p class="lead">Global vessel matching service powered by AI-driven inventory management and innovative payment structures.</p>
+<p class="muted">Connecting Asia to the world with secure escrow services and ETF-based financing options</p>
+</div>
+</main>
+
+<section class="wrap">
+<h2>AI-Powered Vessel Sourcing</h2>
+<div class="highlight-box">
+<h3 style="color:#7ef0d4;margin-top:0;font-size:1.5rem;">Intelligent Inventory Management System</h3>
+<p>Our proprietary AI platform continuously monitors vessel markets across Japan, Korea, and Eastern Europe, providing real-time inventory updates and intelligent matching between buyers and sellers. Unlike traditional brokers relying on static listings, our system dynamically aggregates data from multiple sources to surface optimal matches instantly.</p>
+<div style="margin-top:32px;">
+<a href="/products/avisail-trading-jp.html" class="cta">View Trading Platform Details</a>
+<a href="#vessel-types" class="btn" style="margin-left:16px;">See Vessel Types</a>
+</div>
+</div>
+
+<div class="grid-2" style="margin-top:60px;">
+<div class="card">
+<h3>Automated Market Scanning</h3>
+<p><strong>Real-Time Data Aggregation:</strong></p>
+<p>Daily updates from shipyards, brokers, and fleet operators across Asia and Europe. Automated parsing of vessel specifications, pricing, and availability. AI-powered categorization and standardization of listings. Integration with maritime databases and classification societies.</p>
+</div>
+<div class="card">
+<h3>Intelligent Matching</h3>
+<p><strong>Buyer-Seller Optimization:</strong></p>
+<p>Machine learning algorithms match buyer requirements with available inventory. Predictive analytics for pricing trends and market timing. Automated alerts for new vessels matching client criteria. Multi-criteria filtering (vessel type, age, flag, price range, delivery timeline).</p>
+</div>
+<div class="card">
+<h3>Due Diligence Automation</h3>
+<p><strong>Risk Assessment Tools:</strong></p>
+<p>Automated background checks on sellers and vessels. Historical ownership and incident tracking. Class society certificate verification. Flag state compliance monitoring. AI-powered red flag detection for potential issues.</p>
+</div>
+<div class="card">
+<h3>Transaction Management</h3>
+<p><strong>End-to-End Process Support:</strong></p>
+<p>Digital documentation and contract management. Milestone tracking from inquiry to delivery. Multi-party communication platform. Integration with legal and financial service providers.</p>
+</div>
+</div>
+</section>
+
+<section class="wrap" id="vessel-types">
+<h2>Vessel Specializations</h2>
+<p class="muted" style="max-width:800px;margin-bottom:40px;">We specialize in three high-demand vessel categories serving regional markets across Asia, the Middle East, and emerging economies.</p>
+<div class="grid-3">
+<div class="card">
+<h3>Coasters (500-5000 DWT)</h3>
+<p><strong>Regional Cargo Transport:</strong> Short-sea shipping vessels ideal for coastal and inter-island trade routes.</p>
+<p><strong>Primary Markets:</strong> Philippines, Indonesia, Middle East, West Africa</p>
+<p><strong>Typical Uses:</strong> General cargo, bulk commodities, regional supply chains</p>
+<p><strong>Source Regions:</strong> Japan (aging fleet replacement), Korea (new builds), Eastern Europe (refurbished vessels)</p>
+</div>
+<div class="card">
+<h3>Tugboats (1000-5000 HP)</h3>
+<p><strong>Harbor & Offshore Operations:</strong> Essential for port operations, towing, and offshore support.</p>
+<p><strong>Primary Markets:</strong> UAE, Oman, Saudi Arabia, Singapore, Philippines</p>
+<p><strong>Typical Uses:</strong> Ship assist, barge towing, offshore platform support</p>
+<p><strong>Source Regions:</strong> Japan (high-quality used units), Korea (modern builds), Netherlands (specialized offshore tugs)</p>
+</div>
+<div class="card">
+<h3>Landing Craft (LCT/LCM)</h3>
+<p><strong>Shallow-Water Logistics:</strong> Specialized vessels for remote areas without port infrastructure.</p>
+<p><strong>Primary Markets:</strong> Philippines, Indonesia, Pacific Islands, Myanmar</p>
+<p><strong>Typical Uses:</strong> Construction materials, heavy equipment, disaster relief, island supply</p>
+<p><strong>Source Regions:</strong> Japan (government surplus), Korea (commercial builds), Singapore (ex-military conversions)</p>
+</div>
+</div>
+</section>
+
+<section class="wrap">
+<h2>Innovative Payment Structures</h2>
+<p class="muted" style="max-width:800px;margin-bottom:40px;">We offer flexible financing options designed to reduce buyer risk and accelerate transaction completion.</p>
+<div class="grid-2">
+<div class="card">
+<h3>Escrow-Based Transactions</h3>
+<p><strong>Secure Milestone Payments:</strong> Funds held by neutral third-party escrow agents (law firms, banks) and released based on predefined milestones: initial deposit on contract signing, inspection payment upon survey completion, balance transfer upon delivery and title registration.</p>
+<p><strong>Risk Mitigation:</strong> Protects buyers from seller default or misrepresentation. Ensures sellers receive payment upon fulfilling contractual obligations. Reduces counterparty risk in cross-border transactions.</p>
+</div>
+<div class="card">
+<h3>ETF-Backed Financing</h3>
+<p><strong>Innovative Collateral Structure:</strong> Buyers pledge ETF portfolios as collateral instead of traditional bank loans. Lower interest rates compared to shipfinance due to liquid collateral. No impact on corporate credit lines or balance sheet leverage.</p>
+<p><strong>Process:</strong> Client maintains ETF portfolio with our investment division. Portfolio value underwrites vessel purchase (typically 70-80% LTV). Flexible repayment structures tied to vessel cash flows.</p>
+</div>
+</div>
+</section>
+
+<section class="wrap">
+<h2>Service Process</h2>
+<div class="grid-2">
+<div class="card">
+<h3>Discovery & Matching (1-2 weeks)</h3>
+<p>• Initial client consultation to understand requirements<br>
+• AI system searches inventory across all source markets<br>
+• Shortlist presentation with specs, photos, pricing<br>
+• Preliminary financial structure discussion</p>
+</div>
+<div class="card">
+<h3>Inspection & Negotiation (2-4 weeks)</h3>
+<p>• Independent marine surveyor engagement<br>
+• Physical inspection and condition assessment<br>
+• Price negotiation based on survey findings<br>
+• Contract drafting and legal review</p>
+</div>
+<div class="card">
+<h3>Transaction Execution (4-8 weeks)</h3>
+<p>• Escrow account setup and initial deposit<br>
+• Documentation preparation (bill of sale, transfer papers)<br>
+• Flag registration and class society transfer<br>• Final payment and title delivery</p>
+</div>
+<div class="card">
+<h3>Post-Delivery Support</h3>
+<p>• Flag state registration assistance<br>
+• Insurance placement and renewal<br>
+• Crew recruitment coordination (if needed)<br>
+• Ongoing market intelligence and fleet expansion consulting</p>
+</div>
+</div>
+</section>
+
+<section class="wrap">
+<h2>Why Choose Avisail</h2>
+<div class="grid-2">
+<div class="card">
+<h3>Technology-Driven Efficiency</h3>
+<p>Traditional vessel brokerage relies on personal networks and manual searches, often taking months to find suitable matches. Our AI platform reduces search time from weeks to days, providing comprehensive market coverage and instant matching notifications.</p>
+</div>
+<div class="card">
+<h3>Financial Innovation</h3>
+<p>Our ETF-backed financing option is unique in the maritime industry, offering buyers with investment portfolios an alternative to traditional shipfinance. This structure provides faster approval, lower costs, and greater flexibility than bank lending.</p>
+</div>
+<div class="card">
+<h3>Cross-Domain Expertise</h3>
+<p>Unlike pure brokers, we combine vessel trading with investment management and technology development. Clients benefit from integrated services: trading platform access, investment portfolio management, and secure payment structures all under one roof.</p>
+</div>
+<div class="card">
+<h3>Regional Market Knowledge</h3>
+<p>Deep understanding of Asia-Pacific and Middle East maritime markets, including regulatory environments, port infrastructure, and local buyer preferences. Strong relationships with shipyards, brokers, and flag administrations across our operating regions.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<div class="footer-content">
+<div class="footer-col">
+<h4>Company</h4>
+<ul>
+<li><a href="/en/about.html">About Us</a></li>
+<li><a href="/en/contact.html">Contact</a></li>
+<li><a href="/#business">Our Business</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Services</h4>
+<ul>
+<li><a href="/en/services/vessel-trading.html">Vessel Trading</a></li>
+<li><a href="/en/services/investment.html">Investment (Aviscore)</a></li>
+<li><a href="/en/services/technology.html">Technology (ADCS)</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Legal</h4>
+<ul>
+<li><a href="/en/privacy-policy.html">Privacy Policy</a></li>
+<li><a href="/en/terms-of-service.html">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Avisail Technologies — All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

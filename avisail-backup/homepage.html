@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Avisail Technologies</title>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-dark: #05080f;
+  --bg-panel: rgba(20, 30, 50, 0.6);
+  --primary: #6aa6ff;
+  --accent: #7ef0d4;
+  --text-main: #e9f0ff;
+  --text-muted: #9fb0cc;
+  --line: rgba(255,255,255,.1);
+  --glass: rgba(255, 255, 255, 0.03);
+  
+  /* 【写真1枚目】トップ背景画像 (Github上のパスに変更してください) */
+  /* IMAGE EDIT HERE 1 */
+  --home-hero: url('images/hero.jpg'); 
+}
+
+*{ box-sizing: border-box; }
+
+html,body{
+  margin:0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  line-height:1.8;
+  scroll-behavior: smooth; /* スムーススクロール */
+}
+
+a{ color:var(--primary); text-decoration:none; transition: color 0.3s; }
+a:hover{ color:var(--accent); }
+
+.wrap{ max-width:1200px; margin:0 auto; padding:0 24px; }
+
+/* Header */
+header{
+  position:sticky; top:0; z-index:100;
+  background: rgba(5, 8, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{ display:flex; align-items:center; justify-content:space-between; height:70px; }
+.brand{ display:flex; align-items:center; gap:12px; font-weight: 600; letter-spacing: 0.05em; color: #fff;}
+.logo{ 
+  width:32px; height:32px; border-radius:8px; 
+  background:conic-gradient(from 210deg, var(--primary), var(--accent)); 
+}
+
+/* Nav Menu */
+nav ul{ display:flex; gap:32px; list-style:none; margin:0; padding:0; align-items:center; }
+.menu-item{ position:relative; padding: 10px 0; cursor: pointer; }
+.dropdown{
+  position:absolute; top:100%; left:50%; transform: translateX(-50%); 
+  min-width:260px;
+  background: #0d1424; 
+  border:1px solid var(--line); border-radius:12px; 
+  padding:12px; 
+  display:none;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  flex-direction: column; gap: 8px;
+}
+.dropdown a {
+  display: block; padding: 8px 16px; border-radius: 6px;
+  color: var(--text-muted); transition: all 0.2s;
+}
+.dropdown a:hover {
+  background: rgba(255,255,255,0.05); color: #fff;
+}
+.menu-item:hover .dropdown{ display:flex; animation: fadeIn 0.3s ease; }
+
+@keyframes fadeIn { from{opacity:0; transform:translate(-50%, 10px);} to{opacity:1; transform:translate(-50%, 0);} }
+
+/* Buttons */
+.btn-group {
+  display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;
+}
+
+.cta, .btn {
+  display: inline-flex; justify-content: center; align-items: center;
+  padding: 12px 32px; border-radius: 50px;
+  font-weight: 600; font-size: 0.95rem;
+  transition: all 0.3s ease;
+  min-width: 160px; text-align: center;
+  cursor: pointer;
+}
+
+.cta {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #05080f;
+  box-shadow: 0 10px 20px rgba(106,166,255,0.2);
+  border: none;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(106,166,255,0.3);
+  color: #05080f;
+}
+
+.btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+.btn:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: #fff;
+}
+
+.lang-switch {
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--text-muted);
+}
+
+/* Hero Section */
+.hero{
+  position:relative; overflow:hidden;
+  min-height: 90vh;
+  display: flex; align-items: center;
+  padding-bottom: 80px;
+}
+.hero::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background: radial-gradient(circle at center, rgba(106, 166, 255, 0.08) 0%, rgba(5, 8, 15, 0) 70%),
+              linear-gradient(180deg, rgba(5,8,15,0.3) 0%, rgba(5,8,15,1) 100%),
+              var(--home-hero) center/cover no-repeat;
+  filter: brightness(0.7);
+}
+.hero .wrap{ position:relative; z-index:2; width: 100%; }
+
+.hero h1{
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(to right, #fff, #9fb0cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+.hero .lead{
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 700px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.slogan {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: block;
+  opacity: 0.9;
+}
+.hero-quote {
+  font-size: 1rem;
+  color: var(--text-muted);
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+  margin-bottom: 24px;
+  max-width: 800px;
+  font-style: italic;
+}
+
+/* Sections */
+section{ padding:100px 0; border-bottom:1px solid var(--line); position: relative; }
+
+section.passion-section {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 2rem; margin-bottom: 48px;
+  display: flex; align-items: center; gap: 16px;
+}
+.section-title::before {
+  content:''; display:block; width: 4px; height: 32px; 
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+}
+
+/* Cards */
+.card{
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border:1px solid var(--line); 
+  border-radius:24px; padding:32px;
+  transition: transform 0.3s, border-color 0.3s;
+  height: 100%; display: flex; flex-direction: column;
+}
+.card:hover{
+  transform: translateY(-5px);
+  border-color: rgba(106, 166, 255, 0.3);
+}
+.card h3 { margin-top: 0; font-size: 1.5rem; color: #fff; }
+.card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px; flex-grow: 1; }
+
+.grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
+.grid-2{ display:grid; grid-template-columns:repeat(2,1fr); gap:32px; }
+
+/* Thumbnails */
+.thumb{
+  width:100%; height:200px; border-radius:16px; margin-bottom:24px;
+  background-color: #0e1424;
+  background-position: center; background-size: cover;
+  border:1px solid var(--line);
+  position: relative; overflow: hidden;
+}
+
+/* 【写真2枚目】代表者 (Githubで画像をアップロード後、urlを書き換えてください) */
+.thumb.ceo { 
+  /* IMAGE EDIT HERE 2 */
+  background-image: url('https://placehold.co/400x400/101827/fff?text=Representative+Image'); 
+  height: 350px; 
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+/* 【写真3,4,5枚目】各事業 (Githubで画像をアップロード後、urlを書き換えてください) */
+/* IMAGE EDIT HERE 3 */
+.thumb.vessel { background-image: url('vessel-trading-hero.jpg'); }
+/* IMAGE EDIT HERE 4 */
+.thumb.invest { background-image: url('investment-hero.jpg'); }
+/* IMAGE EDIT HERE 5 */
+.thumb.tech { background-image: url('technology-hero.jpg'); }
+
+
+/* Sub-lists in cards */
+.feature-list {
+  list-style: none; padding: 0; margin: 0 0 24px 0;
+  font-size: 0.9rem; color: var(--text-muted);
+}
+.feature-list li {
+  margin-bottom: 8px; padding-left: 20px; position: relative;
+}
+.feature-list li::before {
+  content: '›'; position: absolute; left: 0; color: var(--accent); font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width:980px){ 
+  .grid-3, .grid-2{ grid-template-columns:1fr; } 
+  .hero h1 { font-size: 2.5rem; }
+  nav ul { display: none; } 
+}
+
+/* Footer */
+footer { background: #020408; border-top: 1px solid var(--line); padding: 60px 0; margin-top: auto; }
+footer p { color: #556; font-size: 0.9rem; }
+
+/* Video Intro Styles */
+#intro,
+#intro .intro-inner{
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#vimeo-wrap{ position: absolute; inset: 0; overflow: hidden; }
+/* Vimeo iframe cover trick */
+#vimeo-wrap iframe{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) !important;
+  width: 177.78vh !important;
+  height: 100vh !important;
+  min-width: 100vw !important;
+  min-height: 56.25vw !important;
+}
+#intro .intro-title h1{
+  margin:0; font-size:clamp(40px,7vw,88px); font-weight:300;
+  letter-spacing:.18em; color:#fff; text-shadow:0 2px 28px rgba(0,0,0,.45);
+  font-variant:all-small-caps;
+}
+#intro button.cta-skip{ position:absolute; top:20px; right:20px; z-index:3; padding: 10px 20px; background: transparent; border: 1px solid rgba(255,255,255,0.3); color: #fff; border-radius: 4px; cursor: pointer; }
+
+</style>
+</head>
+<body>
+
+<!-- INTRO VIDEO SECTION -->
+<section id="intro" data-video-id="1110865623" style="z-index:9999;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s ease">
+  <button class="cta-skip" aria-label="Skip">Skip</button>
+  <div class="intro-inner">
+    <div id="vimeo-wrap"></div>
+    <div class="intro-title" style="position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;z-index:2">
+      <h1>AVISAIL</h1>
+    </div>
+    <div id="click-skip" style="position:absolute;inset:0"></div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div id="site" style="opacity:0;visibility:hidden;transition:opacity 1.2s ease,visibility 1.2s ease">
+
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <!-- Logo Image -->
+        <div class="logo"></div>
+        <span>Avisail Technologies</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="menu-item">
+            <span>Services ▾</span>
+            <div class="dropdown">
+              <a href="services-vessel.html">Vessel Trading</a>
+              <a href="services-investment.html">Investment</a>
+              <a href="services-tech.html">Technology</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="lang-switch" href="ja/index.html">日本語</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="wrap">
+      <!-- Slogan -->
+      <span class="slogan">Driven by Discovery.</span>
+      
+      <!-- Quote -->
+      <div class="hero-quote">
+        A ship is a symbol of progress. We carry frontier technologies and sail toward horizons yet unseen.
+      </div>
+
+      <!-- H1 -->
+      <h1>Navigating the Future.</h1>
+      
+      <!-- Lead -->
+      <p class="lead">
+        We turn frontier technology into practical reality. <br>
+        Redefining trade, security, and infrastructure through implementation-first AI.
+      </p>
+      
+      <!-- Buttons -->
+      <div class="btn-group">
+        <!-- ここをクリックするとページ内の事業一覧(#business)へスクロールします -->
+        <a href="#business" class="cta">Explore Services</a>
+        <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- PURPOSE & PASSION -->
+  <section class="wrap passion-section">
+    <div class="grid-2">
+      <div class="card">
+        <h3>Passion</h3>
+        <p>The world grows closer every day and cultures sit side by side. When a great ship appears, we choose courage—stepping forward to put technology to truly valuable use, as our ancestors once rowed into the open sea. There may be no unknown oceans today, yet the great ship of technology appears before us daily. Courage is the spark of innovation. We dedicate ourselves to delivering that value to people.</p>
+      </div>
+      <div class="card" style="border-color: var(--accent);">
+        <h3>Purpose</h3>
+        <p>We place human connection and trust first to deliver value. Through technology-driven transformation, we broaden access to prosperity—and we never stop striving to elevate that value.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPRESENTATIVE MESSAGE -->
+  <section class="wrap">
+    <h2 class="section-title">Message</h2>
+    <div class="card" style="flex-direction: row; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
+      
+      <!-- 写真2枚目: 代表者 -->
+      <div class="thumb ceo" style="flex: 1; min-width: 300px; margin-bottom: 0; position:relative;">
+        <span style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:rgba(255,255,255,0.5); font-size:0.8rem;">
+          Representative Image<br>(Edit CSS .thumb.ceo)
+        </span>
+      </div>
+
+      <div style="flex: 2;">
+        <h3>Navigating the Digital Ocean</h3>
+        <p style="margin-top: 16px;">
+          The sea has always been the frontier of human possibility. Today, that frontier has expanded into the digital realm of AI and data. 
+          <br><br>
+          At Avisail, we do not see technology and tradition as opposites. We use the precision of AI to enhance the timeless trust required in maritime trade. We use the logic of algorithms to protect and grow assets. 
+          <br><br>
+          Our journey is "Driven by Discovery"—constantly seeking the next horizon to bring value to our partners and society. We invite you to sail with us.
+        </p>
+        <div style="margin-top: 20px;">
+          <strong>Representative Director</strong><br>
+          <span class="muted">Avisail Technologies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (ID="business" added for scroll target) -->
+  <section class="wrap" id="business">
+    <h2 class="section-title">Our Business</h2>
+    
+    <!-- Vessel Trading (A,B,C Removed) -->
+    <div class="card" style="margin-bottom: 40px;">
+      <div class="grid-2">
+        <div>
+          <!-- 写真3枚目: 船舶事業 -->
+          <div class="images/vessel-trading-hero.jpg"></div>
+        </div>
+        <div>
+          <h3>Vessel Trading</h3>
+          <p>Global matching service connecting Asia to the world. We do not hold stock, focusing on speed and AI-driven matching.</p>
+          <ul class="feature-list">
+            <li><strong>Sourcing:</strong> Japan, Korea, Asia</li>
+            <li><strong>Sales Markets:</strong> UAE, Oman, Southeast Asia, Europe</li>
+            <li><strong>Key Elements:</strong> AI Inventory Updates, Legal Design, Secure Payments, Investment Schemes</li>
+            <li><strong>Vessel Types:</strong> Mid-size ships, Fishing vessels, Tugs, Workboats, Tankers</li>
+          </ul>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn" href="services-vessel.html">Service Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <!-- Investment (A,B,C Removed) -->
+      <div class="card">
+        <!-- 写真4枚目: 投資事業 -->
+        <div class="images/investment-hero.jpg"></div>
+        <h3>Investment (Aviscore)</h3>
+        <p>AI-driven asset management engine focusing on stability and growth.</p>
+        <ul class="feature-list">
+          <li><strong>AI Scoring:</strong> Multi-factor analysis (Technical, Risk, Sentiment)</li>
+          <li><strong>Model:</strong> Proprietary operation + Partial Entrustment</li>
+          <li><strong>Reporting:</strong> Quarterly detailed performance reports</li>
+          <li><strong>Structure:</strong> Non-stock model</li>
+        </ul>
+        <a class="btn" href="services-investment.html">Service Details</a>
+      </div>
+
+      <!-- Technology (A,B,C Removed) -->
+      <div class="card">
+        <!-- 写真5枚目: 技術事業 -->
+        <div class="images/technology-hero.jpg"></div>
+        <h3>AI Technology</h3>
+        <p>Practical AI implementation for real-world operations.</p>
+        
+        <ul class="feature-list">
+          <li>
+            <strong style="color:var(--primary)">Avisail Cyber Security</strong><br>
+            Active defense & New tech development.
+          </li>
+          <li>
+            <strong style="color:var(--primary)">Avisail Investment Score</strong><br>
+            Providing latest trends via AI analysis.
+          </li>
+          <li>
+            <strong style="color:var(--primary)">Avisail 3D Draft System</strong><br>
+            Optimizing terrain data and architectural blueprints using AI.
+          </li>
+        </ul>
+        
+        <div style="margin-top:auto;">
+          <a class="btn" href="services-tech.html">Service Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & PARTNERSHIP -->
+  <section class="wrap">
+    <h2 class="section-title">Partnership & Contact</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Partnerships & Proposals</h3>
+        <p>If you are interested in any division, please contact us and we will connect you with the right team.</p>
+        <a class="cta" href="contact.html">Contact Us</a>
+      </div>
+      <div class="card">
+        <h3>For Investors</h3>
+        <p>We generally do not accept equity investments. Instead, we offer project-based participation schemes. Please contact us for details.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+      <p>© 2025 Avisail Technologies — All rights reserved.</p>
+      <div style="display:flex; gap:20px;">
+        <a href="#" style="color:var(--text-muted)">Github</a>
+        <a href="#" style="color:var(--text-muted)">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Scripts (Video Intro Logic) -->
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+(function(){
+  var intro=document.getElementById('intro');
+  var site=document.getElementById('site');
+  var vwrap=document.getElementById('vimeo-wrap');
+  var skipBtn=intro.querySelector('button');
+  var clickSkip=document.getElementById('click-skip');
+  var iframe=document.createElement('iframe');
+  var params=new URLSearchParams({autoplay:1,muted:1,controls:0,loop:0,background:1,playsinline:1,byline:0,title:0,portrait:0,dnt:1});
+  
+  // VIMEO SETUP
+  iframe.src="https://player.vimeo.com/video/1110865623?" + params.toString();
+  iframe.allow="autoplay; fullscreen; picture-in-picture";
+  iframe.setAttribute('title','Avisail Intro');
+  vwrap.appendChild(iframe);
+  
+  var player=new Vimeo.Player(iframe);
+  
+  function reveal(){
+    intro.style.opacity='0';
+    intro.style.visibility='hidden';
+    site.style.opacity='1';
+    site.style.visibility='visible';
+    player.pause().catch(function(){});
+    // Ensure scrolling is enabled
+    document.body.style.overflow = 'auto';
+  }
+  
+  player.on('ended',reveal);
+  [skipBtn,clickSkip].forEach(function(e){e.addEventListener('click',reveal);});
+  
+  // Fallback timeout
+  setTimeout(function(){ if(site.style.visibility!=='visible') reveal(); },15000);
+})();
+</script>
+
+</body>
+</html>

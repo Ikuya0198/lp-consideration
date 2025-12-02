@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>お問い合わせ | Avisail Technologies</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--line:rgba(255,255,255,.08);--hero-bg:url('/images/contact-hero.jpg');}
+*{box-sizing:border-box;}
+html,body{margin:0;background:#0a0f1a;color:#e9f0ff;font-family:'Inter','Noto Sans JP',sans-serif;line-height:1.7;}
+html{scroll-behavior:smooth;}
+a{color:#cfe2ff;text-decoration:none;transition:color 0.3s;}
+a:hover{color:#7ef0d4;}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px;}
+header{position:sticky;top:0;z-index:50;background:rgba(10,15,26,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(10px);}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;color:#fff;}
+.logo{width:32px;height:32px;border-radius:8px;background:conic-gradient(from 210deg,#6aa6ff,#7ef0d4);}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center;font-size:0.95rem;}
+.menu-item{position:relative;padding:10px 0;}
+.dropdown{position:absolute;top:100%;left:-10px;min-width:200px;background:#0d1424;border:1px solid var(--line);border-radius:12px;padding:12px;display:none;flex-direction:column;gap:8px;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.menu-item:hover .dropdown{display:flex;}
+.dropdown a{padding:6px 12px;border-radius:6px;color:#9fb0cc;}
+.dropdown a:hover{background:rgba(255,255,255,0.05);color:#fff;}
+.globe-icon{font-size:1.2rem;cursor:pointer;color:#9fb0cc;transition:color 0.3s;}
+.globe-icon:hover{color:#7ef0d4;}
+.page-hero{padding:140px 0 100px;text-align:center;background:linear-gradient(rgba(10,15,26,0.7),rgba(10,15,26,0.9)),var(--hero-bg) center/cover;}
+.page-hero h1{font-size:3.5rem;margin-bottom:24px;color:#fff;font-weight:700;}
+.page-hero .lead{color:#cfe2ff;max-width:800px;margin:0 auto 16px;font-size:1.2rem;}
+.muted{color:#9fb0cc;}
+section{padding:100px 0;border-bottom:1px solid var(--line);}
+h2{font-size:2rem;margin-bottom:40px;color:#fff;display:flex;align-items:center;gap:16px;}
+h2::before{content:'';width:4px;height:32px;background:linear-gradient(to bottom,#6aa6ff,#7ef0d4);display:block;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+.card{background:rgba(255,255,255,0.02);border:1px solid var(--line);border-radius:24px;padding:32px;backdrop-filter:blur(5px);transition:transform 0.3s,border-color 0.3s;height:100%;display:flex;flex-direction:column;}
+.card:hover{transform:translateY(-5px);border-color:rgba(106,166,255,0.3);}
+.card h3{color:#fff;margin-top:0;font-size:1.3rem;}
+.card p{color:#9fb0cc;margin-bottom:16px;}
+.highlight-box{background:rgba(126,240,212,0.05);border:1px solid rgba(126,240,212,0.2);border-radius:16px;padding:40px;margin:40px auto;max-width:700px;text-align:center;}
+.cta{display:inline-block;padding:12px 28px;border-radius:50px;background:linear-gradient(135deg,#6aa6ff,#7ef0d4);color:#06101a;font-weight:700;font-size:0.95rem;box-shadow:0 10px 20px rgba(106,166,255,.2);border:none;transition:all 0.3s;}
+.cta:hover{transform:translateY(-2px);box-shadow:0 15px 30px rgba(106,166,255,.3);}
+.btn{display:inline-block;padding:12px 28px;border-radius:50px;border:1px solid var(--line);background:rgba(255,255,255,0.05);color:#e9f0ff;font-size:0.95rem;transition:all 0.3s;}
+.btn:hover{border-color:rgba(106,166,255,0.5);transform:translateY(-2px);}
+footer{background:rgba(5,8,15,0.8);padding:60px 0 30px;border-top:1px solid var(--line);}
+.footer-content{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-bottom:40px;}
+.footer-col h4{color:#fff;font-size:1.1rem;margin-bottom:20px;}
+.footer-col ul{list-style:none;padding:0;margin:0;}
+.footer-col ul li{margin-bottom:12px;}
+.footer-col a{color:#9fb0cc;font-size:0.9rem;}
+.footer-col a:hover{color:#7ef0d4;}
+.footer-bottom{border-top:1px solid var(--line);padding-top:30px;text-align:center;color:#9fb0cc;font-size:0.85rem;}
+@media(max-width:980px){.grid-3{grid-template-columns:1fr;}.footer-content{grid-template-columns:1fr;}nav ul{display:none;}.page-hero h1{font-size:2.5rem;}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<div class="brand"><div class="logo"></div><span>Avisail Technologies</span></div>
+<nav>
+<ul>
+<li><a href="/ja/index.html">ホーム</a></li>
+<li><a href="/ja/about.html">会社概要</a></li>
+<li class="menu-item"><span>サービス ▾</span>
+<div class="dropdown">
+<a href="/ja/services/vessel-trading.html">船舶売買</a>
+<a href="/ja/services/investment.html">投資運用</a>
+<a href="/ja/services/technology.html">テクノロジー</a>
+</div>
+</li>
+<li><a class="active" href="/ja/contact.html">お問い合わせ</a></li>
+<li class="menu-item"><span class="globe-icon">🌐 ▾</span>
+<div class="dropdown">
+<a href="/en/contact.html">English</a>
+<a href="/ja/contact.html">日本語</a>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="page-hero">
+<div class="wrap">
+<h1>お問い合わせ</h1>
+<p class="lead">サービスに関するお問い合わせ、パートナーシップ、ビジネス提案を歓迎いたします。</p>
+<p class="muted">メールまたはお電話でご連絡ください。1営業日以内にご返信いたします</p>
+</div>
+</main>
+
+<section class="wrap">
+<h2>一般的なお問い合わせ</h2>
+<div class="highlight-box">
+<h3 style="color:#7ef0d4;margin-top:0;font-size:1.5rem;">ご連絡方法</h3>
+<p style="color:#9fb0cc;margin-bottom:32px;">一般的なご質問、パートナーシップの機会、サービスに関するお問い合わせは、直接ご連絡ください。</p>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+<a href="mailto:info@avisail.com" class="cta">info@avisail.com</a>
+<a href="tel:+817093101362" class="btn">+81 70-9310-1362</a>
+</div>
+<p style="margin-top:24px;color:#9fb0cc;font-size:0.9rem;">営業時間：午前9時 - 午後6時（日本時間）| 月曜日 - 金曜日</p>
+</div>
+</section>
+
+<section class="wrap">
+<h2>事業部門別お問い合わせ</h2>
+<p class="muted" style="max-width:800px;margin-bottom:40px;">各事業領域に関する具体的なお問い合わせは、下記の連絡先をご利用ください。</p>
+<div class="grid-3">
+<div class="card">
+<h3>船舶売買</h3>
+<p>船舶の売買に関するお問い合わせ、在庫のご質問、資金調達オプションについて。</p>
+<p><strong>メール：</strong><br><a href="mailto:trading@avisail.com">trading@avisail.com</a></p>
+<p><strong>対応内容：</strong> コースター船、タグボート、揚陸艇、エスクローサービス、ETF担保資金調達</p>
+</div>
+<div class="card">
+<h3>投資運用（Aviscore）</h3>
+<p>投資管理サービス、ポートフォリオに関するお問い合わせ、パートナーシップの機会について。</p>
+<p><strong>メール：</strong><br><a href="mailto:investment@avisail.com">investment@avisail.com</a></p>
+<p><strong>対応内容：</strong> 資産運用、FXキャリートレード、ETF戦略、パフォーマンスレポート、クライアントオンボーディング</p>
+</div>
+<div class="card">
+<h3>テクノロジー（ADCS）</h3>
+<p>ADCSプラットフォームに関するお問い合わせ、セキュリティ診断、ホワイトレーベルパートナーシップについて。</p>
+<p><strong>メール：</strong><br><a href="mailto:security@avisail.com">security@avisail.com</a></p>
+<p><strong>対応内容：</strong> サイバーセキュリティスキャン、OSINT診断、サンプルレポート、MSPパートナーシップ、エンタープライズ展開</p>
+</div>
+</div>
+</section>
+
+<section class="wrap">
+<h2>オフィス情報</h2>
+<div class="grid-3">
+<div class="card">
+<h3>日本オフィス（主要拠点）</h3>
+<p><strong>法人形態：</strong> 合同会社（GK）設立予定 2026年1月</p>
+<p><strong>現在の状態：</strong> 個人事業登録 2025年12月</p>
+<p><strong>所在地：</strong> 東京、日本</p>
+<p>事業開発、クライアント関係、運営管理の主要拠点。</p>
+</div>
+<div class="card">
+<h3>グローバル事業</h3>
+<p><strong>パナマ法人：</strong> 船舶売買と国際取引のための国際取引ハブ</p>
+<p><strong>バンキング：</strong> フィンテック統合と多通貨サポートのためのエストニアとドバイ拠点</p>
+<p>アジア太平洋、中東、欧州全体で24時間体制のグローバル事業</p>
+</div>
+<div class="card">
+<h3>対応時間</h3>
+<p><strong>メールお問い合わせ：</strong> 1営業日以内</p>
+<p><strong>電話対応：</strong> 午前9時-午後6時（日本時間）、月曜日-金曜日</p>
+<p><strong>緊急案件：</strong> 既存クライアント様は当日対応</p>
+<p>複数のタイムゾーンで運営し、迅速なグローバルサービスを提供しています。</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<div class="footer-content">
+<div class="footer-col">
+<h4>会社</h4>
+<ul>
+<li><a href="/ja/about.html">会社概要</a></li>
+<li><a href="/ja/contact.html">お問い合わせ</a></li>
+<li><a href="/ja/index.html#business">事業内容</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>サービス</h4>
+<ul>
+<li><a href="/ja/services/vessel-trading.html">船舶売買</a></li>
+<li><a href="/ja/services/investment.html">投資運用（Aviscore）</a></li>
+<li><a href="/ja/services/technology.html">テクノロジー（ADCS）</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>法務</h4>
+<ul>
+<li><a href="/ja/privacy-policy.html">プライバシーポリシー</a></li>
+<li><a href="/ja/terms-of-service.html">利用規約</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Avisail Technologies — All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
